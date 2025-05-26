@@ -4,27 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign in to your Account</title>
+  <title>Sign up</title>
   <link rel="icon" href="./assets/icons/favicon.svg" type="icons/svg+xml">
   <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
   <div class="container">
-    <img src="./assets/icons/logo.svg" alt="Logoipsum" class="logo">
     <div class="inner">
       <h2 class="title">
-        Sign in to your Account
+        Sign up
       </h2>
       <p class="description">
-        Enter your email and password to log in
+        Create an account to continue!
       </p>
     </div>
-    <form action="/signin" method="post" class="form">
+    <form action="/signup" class="form">
       <div class="form__fields">
+        <label class="form__label">
+          Full Name
+          <input type="text" class="form__input">
+        </label>
         <label class="form__label">
           Email
           <input type="email" class="form__input">
+        </label>
+        <label class="form__label">
+          Birth of date
+          <input type="date" class="form__input">
+        </label>
+        <label class="form__label">
+          Phone Number
+          <input type="tel" class="form__input">
         </label>
         <label class="form__label">
           Password
@@ -35,33 +46,15 @@
             </button>
           </div>
         </label>
-        <a href="#" class="form__forgot-password">
-          Forgot Password ?
-        </a>
       </div>
       <button type="submit" class="form__submit">
-        Log In
+        Register
       </button>
-      <div class="form__divider">
-        <div class="form__divider-line"></div>
-        <span class="form__divider-text">Or</span>
-        <div class="form__divider-line"></div>
-      </div>
-      <div class="form__social-auth">
-        <button type="button" class="form__social-auth_btn">
-          <img src="./assets/icons/google.svg" alt="Google" class="form__social-auth_icon">
-          Continue with Google
-        </button>
-        <button type="button" class="form__social-auth_btn">
-          <img src="./assets/icons/facebook.svg" alt="Facebook" class="form__social-auth_icon">
-          Continue with Facebook
-        </button>
-      </div>
     </form>
     <p class="signup__promt">
-      Don’t have an account?
+      Already have an account?
       <a href="./registration.html" class="signup__link">
-        Sign Up
+        Login
       </a>
     </p>
   </div>
