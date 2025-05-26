@@ -1,0 +1,18 @@
+:root {
+    --black: #1a1c1e;
+    --color-mode: #fff;
+    --headline: #111827;
+    --grey: #6c7278;
+    --card: #fff;
+    --white: #fff;
+    --stroke: #edf1f3;
+    --white: #eee;
+    --blue: #0052b4;
+    --blue-base: #375dfb;
+    --purple-base: #6e3ff3;
+    --red-base: #df1c41;
+
+
+    --font-family: "Inter", sans-serif;
+    --second-family: "Plus Jakarta Sans", sans-serif;
+}

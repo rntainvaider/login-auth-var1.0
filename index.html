@@ -2,13 +2,69 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign in to your Account</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in to your Account</title>
+  <link rel="icon" href="./assets/icons/favicon.svg" type="icons/svg+xml">
+  <link rel="stylesheet" href="./assets/css/index.css">
 </head>
 
 <body>
-
+  <div class="container">
+    <img src="./assets/icons/logo.svg" alt="Logoipsum" class="logo">
+    <div class="inner">
+      <h2 class="title">
+        Sign in to your Account
+      </h2>
+      <p class="description">
+        Enter your email and password to log in
+      </p>
+    </div>
+    <form action="/signin" method="post" class="form">
+      <div class="form__fields">
+        <label class="form__label">
+          Email
+          <input type="email" class="form__input">
+        </label>
+        <label class="form__label">
+          Password
+          <div class="form__input-wrapper">
+            <input type="password" class="form__input">
+            <button class="form__input-button">
+              <img src="./assets/icons/eye-off.svg" alt="Eye" width="16" height="16" class="form__input-icon">
+            </button>
+          </div>
+        </label>
+        <a href="#" class="form__forgot-password">
+          Forgot Password ?
+        </a>
+      </div>
+      <button type="submit" class="form__submit">
+        Log In
+      </button>
+      <div class="form__divider">
+        <div class="form__divider-line"></div>
+        <span class="form__divider-text">Or</span>
+        <div class="form__divider-line"></div>
+      </div>
+      <div class="form__social-auth">
+        <button type="button" class="form__social-auth_btn">
+          <img src="./assets/icons/google.svg" alt="Google" class="form__social-auth_icon">
+          Continue with Google
+        </button>
+        <button type="button" class="form__social-auth_btn">
+          <img src="./assets/icons/facebook.svg" alt="Facebook" class="form__social-auth_icon">
+          Continue with Facebook
+        </button>
+      </div>
+    </form>
+    <p class="signup__promt">
+      Don’t have an account?
+      <a href="#" class="signup__link">
+        Sign Up
+      </a>
+    </p>
+  </div>
 </body>
 
 </html>

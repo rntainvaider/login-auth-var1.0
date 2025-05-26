@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: 327px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 24px 0 16px 0;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 130%;
+    letter-spacing: -0.02em;
+    margin-bottom: 12px;
+}
+
+.description {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--grey);
+}
+
+.form {
+    width: 100%;
+    margin-bottom: 21px;
+}
+
+.form__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.form__label {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 160%;
+    letter-spacing: -0.02em;
+    color: var(--grey);
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.form__input-wrapper {
+    position: relative;
+}
+
+.form__input {
+    border: 1px solid var(--stroke);
+    border-radius: 10px;
+    padding: 12.5px 14px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    width: 100%;
+}
+
+.form__input-button {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    cursor: pointer;
+}
+
+.form__forgot-password {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    text-align: right;
+    color: #4d81e7;
+}
+
+.form__submit {
+    width: 100%;
+    border-radius: 10px;
+    padding: 14px 24px;
+    box-shadow: 0 0 0 1px var(--blue-base), 0 1px 2px 0 rgba(37, 62, 167, 0.48);
+    background: #1d61e7;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--color-mode);
+    cursor: pointer;
+    margin-bottom: 24px;
+    transition: transform 0.3s ease;
+}
+
+.form__submit:active {
+    transform: scale(0.95)
+}
+
+.form__divider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form__divider-line {
+    width: 100%;
+    height: 1px;
+    background: var(--stroke);
+}
+
+.form__divider-text {
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: var(--grey);
+}
+
+.form__social-auth {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form__social-auth_btn {
+    border: 1px solid #eff0f6;
+    border-radius: 10px;
+    padding: 13px 24px;
+    width: 100%;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.signup__promt {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: -0.01em;
+    color: var(--grey);
+    width: 100%;
+    text-align: center;
+}
+
+.signup__link {
+    font-weight: 600;
+    color: #4d81e7;
+    margin-left: 6px;
+}
